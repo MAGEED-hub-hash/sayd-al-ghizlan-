@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دورة صيد الغزلان — الأسئلة والأجوبة الرسمية | الدفعة 87</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky-900:#062a42;
+  --sky-800:#0a3d5e;
+  --sky-700:#0f5785;
+  --sky-500:#2a88c2;
+  --sky-300:#7cc0e6;
+  --sky-100:#d5ecf8;
+  --sky-50:#eef7fc;
+  --gold-700:#8a6412;
+  --gold-600:#b4861f;
+  --gold-500:#d4a539;
+  --gold-400:#e8c46a;
+  --gold-200:#f6e6b8;
+  --ink:#082c42;
+  --ink-soft:#3d6480;
+  --white:#ffffff;
+  --shadow-soft:0 2px 4px rgba(6,42,66,.06),0 8px 20px rgba(6,42,66,.08);
+  --shadow-lift:0 4px 8px rgba(6,42,66,.08),0 18px 42px rgba(6,42,66,.14);
+  --shadow-deep:0 10px 24px rgba(6,42,66,.16),0 32px 70px rgba(6,42,66,.22);
+  --radius:20px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{
+  font-family:'Tajawal',sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(ellipse at 85% -10%, #cfe9f8 0%, transparent 55%),
+    radial-gradient(ellipse at 5% 20%, #f8ecd0 0%, transparent 45%),
+    linear-gradient(180deg,#eaf5fb 0%, #f2f8fc 40%, #eaf2f8 100%);
+  background-attachment:fixed;
+  line-height:2;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+  opacity:.035;
+}
+::selection{background:var(--gold-500);color:var(--sky-900)}
+
+/* ================= NAV ================= */
+header{
+  position:sticky;top:0;z-index:200;
+  background:rgba(238,247,252,.82);
+  backdrop-filter:blur(18px) saturate(160%);
+  border-bottom:1px solid rgba(42,136,194,.18);
+}
+.nav{
+  max-width:1240px;margin:0 auto;padding:14px 26px;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:13px}
+.brand-mark{
+  width:46px;height:46px;border-radius:14px;
+  background:linear-gradient(150deg,var(--sky-500),var(--sky-800));
+  box-shadow:0 6px 16px rgba(15,87,133,.35), inset 0 2px 3px rgba(255,255,255,.35);
+  display:grid;place-items:center;flex-shrink:0;
+}
+.brand-mark svg{width:26px;height:26px}
+.brand-name{
+  font-family:'Reem Kufi',sans-serif;font-size:18px;font-weight:700;
+  color:var(--sky-900);line-height:1.4;
+}
+.brand-name span{
+  display:block;font-family:'Tajawal';font-size:11px;font-weight:500;
+  color:var(--gold-700);letter-spacing:1.6px;
+}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{
+  text-decoration:none;color:var(--ink-soft);font-size:15px;font-weight:500;
+  position:relative;transition:color .3s;
+}
+.nav-links a::after{
+  content:'';position:absolute;right:0;bottom:-5px;width:0;height:2px;
+  background:var(--gold-500);transition:width .35s cubic-bezier(.2,.8,.2,1);
+}
+.nav-links a:hover{color:var(--sky-800)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  font-family:'Reem Kufi',sans-serif;font-size:15px;font-weight:600;
+  padding:12px 28px;border-radius:100px;text-decoration:none;
+  color:var(--sky-900);
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500) 55%,var(--gold-600));
+  box-shadow:0 4px 10px rgba(180,134,31,.35),
+             0 12px 26px rgba(180,134,31,.22),
+             inset 0 2px 2px rgba(255,255,255,.55),
+             inset 0 -3px 5px rgba(138,100,18,.35);
+  transition:.35s cubic-bezier(.2,.8,.2,1);
+}
+.nav-cta:hover{transform:translateY(-2px);
+  box-shadow:0 8px 16px rgba(180,134,31,.4),0 22px 44px rgba(180,134,31,.3),
+             inset 0 2px 2px rgba(255,255,255,.6),inset 0 -3px 5px rgba(138,100,18,.35);}
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;
+  max-width:1240px;margin:0 auto;
+  padding:78px 26px 56px;
+  text-align:center;
+}
+.hero-glow{
+  position:absolute;inset:0;pointer-events:none;overflow:hidden;
+}
+.hero-glow::before{
+  content:'';position:absolute;top:-160px;left:50%;transform:translateX(-50%);
+  width:720px;height:520px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(124,192,230,.55),transparent 68%);
+  filter:blur(30px);
+}
+.hero-glow::after{
+  content:'';position:absolute;top:40px;right:12%;
+  width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,196,106,.4),transparent 70%);
+  filter:blur(24px);
+}
+
+.badge{
+  position:relative;z-index:2;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:9px 22px;border-radius:100px;
+  background:linear-gradient(180deg,#ffffff,#e9f4fa);
+  border:1px solid rgba(212,165,57,.4);
+  box-shadow:0 4px 12px rgba(6,42,66,.1),inset 0 1px 2px #fff;
+  font-size:13.5px;font-weight:600;color:var(--gold-700);letter-spacing:.6px;
+  margin-bottom:28px;
+}
+.badge i{
+  width:9px;height:9px;border-radius:50%;
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-600));
+  box-shadow:0 0 0 4px rgba(232,196,106,.3);
+  animation:pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.72)}}
+
+.hero h1{
+  position:relative;z-index:2;
+  font-family:'Reem Kufi',sans-serif;
+  font-size:clamp(2.6rem,7.4vw,5.4rem);
+  font-weight:700;line-height:1.28;
+  color:var(--sky-900);
+  letter-spacing:-.5px;
+}
+.hero h1 .gold{
+  background:linear-gradient(180deg,var(--gold-600),var(--gold-500) 45%,var(--gold-700));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 3px 5px rgba(180,134,31,.28));
+}
+.hero-sub{
+  position:relative;z-index:2;
+  margin:26px auto 0;max-width:62ch;
+  font-size:clamp(16px,2.1vw,19.5px);
+  color:var(--ink-soft);font-weight:300;line-height:2.15;
+}
+.hero-verse{
+  position:relative;z-index:2;
+  margin:34px auto 0;max-width:760px;
+  padding:22px 34px;border-radius:var(--radius);
+  background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(232,244,251,.75));
+  border:1px solid rgba(212,165,57,.35);
+  box-shadow:var(--shadow-soft),inset 0 1px 2px #fff;
+  font-family:'Amiri',serif;font-size:clamp(18px,2.6vw,23px);
+  color:var(--sky-800);line-height:2.1;
+}
+.hero-verse small{
+  display:block;margin-top:8px;font-family:'Tajawal';
+  font-size:12.5px;color:var(--gold-700);letter-spacing:1.4px;
+}
+
+.hero-cards{
+  position:relative;z-index:2;
+  margin-top:52px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:18px;
+}
+.hcard{
+  padding:26px 22px;border-radius:var(--radius);
+  background:linear-gradient(180deg,#ffffff,#f2f9fd);
+  border:1px solid rgba(124,192,230,.4);
+  box-shadow:var(--shadow-soft),inset 0 1px 2px #fff;
+  text-align:right;transition:.45s cubic-bezier(.2,.8,.2,1);
+  position:relative;overflow:hidden;
+}
+.hcard::after{
+  content:'';position:absolute;top:-40%;right:-30%;width:120px;height:120px;
+  border-radius:50%;background:radial-gradient(circle,rgba(232,196,106,.28),transparent 70%);
+}
+.hcard:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift)}
+.hcard .ic{
+  width:46px;height:46px;border-radius:13px;margin-bottom:16px;
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-600));
+  box-shadow:0 6px 14px rgba(180,134,31,.32),inset 0 2px 2px rgba(255,255,255,.5);
+  display:grid;place-items:center;
+}
+.hcard .ic svg{width:22px;height:22px;stroke:var(--sky-900);fill:none;stroke-width:2}
+.hcard h3{font-family:'Reem Kufi';font-size:19px;color:var(--sky-900);margin-bottom:4px}
+.hcard p{font-size:14.5px;color:var(--ink-soft);font-weight:300;line-height:1.9}
+
+/* ================= SECTIONS / FAQ ================= */
+.wrap{max-width:1240px;margin:0 auto;padding:20px 26px 100px}
+
+.section-head{
+  margin:70px 0 34px;
+  display:flex;align-items:center;gap:18px;
+}
+.section-num{
+  width:58px;height:58px;flex-shrink:0;border-radius:18px;
+  display:grid;place-items:center;
+  font-family:'Reem Kufi';font-size:22px;font-weight:700;
+  color:var(--sky-900);
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500) 50%,var(--gold-600));
+  box-shadow:0 8px 18px rgba(180,134,31,.35),
+             inset 0 2px 2px rgba(255,255,255,.6),
+             inset 0 -3px 5px rgba(138,100,18,.4);
+}
+.section-head h2{
+  font-family:'Reem Kufi';font-size:clamp(1.55rem,3.6vw,2.35rem);
+  color:var(--sky-900);font-weight:700;line-height:1.5;
+}
+.section-head h2 small{
+  display:block;font-family:'Tajawal';font-size:13.5px;font-weight:400;
+  color:var(--gold-700);letter-spacing:1.2px;margin-top:2px;
+}
+.section-line{
+  flex:1;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--gold-500),rgba(212,165,57,0));
+}
+
+/* ================= FAQ ITEM 3D ================= */
+.faq-list{display:flex;flex-direction:column;gap:14px}
+
+.faq-item{
+  position:relative;
+  border-radius:var(--radius);
+  background:linear-gradient(180deg,#ffffff 0%,#f5fafd 100%);
+  border:1px solid rgba(124,192,230,.42);
+  box-shadow:var(--shadow-soft),inset 0 1px 2px #fff;
+  overflow:hidden;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s ease,border-color .45s;
+}
+.faq-item:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-lift),inset 0 1px 2px #fff;
+}
+.faq-item.open{
+  background:linear-gradient(180deg,#ffffff 0%,#eef7fc 100%);
+  border-color:rgba(212,165,57,.55);
+  box-shadow:var(--shadow-deep),inset 0 1px 2px #fff;
+  transform:translateY(-3px);
+}
+.faq-item.open::before{
+  content:'';position:absolute;top:0;right:0;left:0;height:4px;
+  background:linear-gradient(90deg,var(--gold-400),var(--gold-500),var(--gold-400));
+  box-shadow:0 2px 8px rgba(180,134,31,.4);
+}
+
+.faq-q{
+  width:100%;background:none;border:none;cursor:pointer;
+  display:flex;align-items:center;gap:18px;
+  padding:22px 22px;text-align:right;
+  font-family:inherit;color:inherit;
+}
+.q-num{
+  min-width:38px;height:38px;border-radius:11px;
+  display:grid;place-items:center;
+  font-family:'Reem Kufi';font-size:14.5px;font-weight:700;
+  color:var(--sky-800);
+  background:linear-gradient(180deg,#d9ecf7,#bcdcf0);
+  box-shadow:0 3px 8px rgba(10,61,94,.14),inset 0 1px 2px #fff;
+  transition:.4s ease;
+}
+.faq-item.open .q-num{
+  color:var(--sky-900);
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500) 55%,var(--gold-600));
+  box-shadow:0 5px 12px rgba(180,134,31,.35),inset 0 2px 2px rgba(255,255,255,.55);
+}
+.q-title{
+  flex:1;
+  font-family:'Reem Kufi';font-size:clamp(15.5px,2.3vw,19.5px);
+  font-weight:500;line-height:1.85;color:var(--sky-900);
+  transition:transform .4s cubic-bezier(.2,.8,.2,1);
+}
+.faq-item:hover .q-title{transform:translateX(-6px)}
+
+.q-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.link-btn{
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(124,192,230,.55);
+  background:linear-gradient(180deg,#fff,#eef7fc);
+  display:grid;place-items:center;cursor:pointer;
+  color:var(--ink-soft);opacity:.6;
+  transition:.35s cubic-bezier(.2,.8,.2,1);
+  box-shadow:0 2px 6px rgba(6,42,66,.08);
+}
+.link-btn:hover{
+  opacity:1;color:var(--gold-700);border-color:var(--gold-500);
+  transform:rotate(-14deg) scale(1.08);
+  box-shadow:0 6px 14px rgba(180,134,31,.28);
+}
+.link-btn svg{width:16px;height:16px}
+
+.toggle{
+  width:44px;height:44px;border-radius:14px;flex-shrink:0;
+  background:linear-gradient(180deg,#e9f4fa,#cfe7f4);
+  box-shadow:0 3px 8px rgba(10,61,94,.15),inset 0 1px 2px #fff;
+  display:grid;place-items:center;position:relative;
+  transition:.5s cubic-bezier(.2,.8,.2,1);
+}
+.toggle span{
+  position:absolute;border-radius:2px;
+  background:var(--sky-800);transition:.5s cubic-bezier(.2,.8,.2,1);
+}
+.toggle span:first-child{width:16px;height:2.5px}
+.toggle span:last-child{width:2.5px;height:16px}
+.faq-item.open .toggle{
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500) 55%,var(--gold-600));
+  box-shadow:0 6px 14px rgba(180,134,31,.35),inset 0 2px 2px rgba(255,255,255,.55);
+  transform:rotate(135deg);
+}
+.faq-item.open .toggle span{background:var(--sky-900)}
+.faq-item.open .toggle span:last-child{opacity:0;height:2.5px}
+
+.faq-a{
+  display:grid;grid-template-rows:0fr;
+  transition:grid-template-rows .55s cubic-bezier(.2,.8,.2,1);
+}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a-inner{overflow:hidden}
+.faq-a-content{
+  padding:2px 24px 28px 84px;
+  font-size:16px;font-weight:300;line-height:2.2;color:var(--ink-soft);
+}
+.faq-a-content strong{color:var(--sky-800);font-weight:700}
+.faq-a-content ul{margin:12px 0 6px;padding-right:22px}
+.faq-a-content li{margin-bottom:8px;position:relative}
+.faq-a-content li::marker{color:var(--gold-600)}
+.faq-a-content a{
+  color:var(--gold-700);font-weight:600;text-decoration:none;
+  border-bottom:1.5px solid rgba(212,165,57,.5);transition:.3s;
+}
+.faq-a-content a:hover{color:var(--sky-700);border-color:var(--sky-500)}
+.faq-a-content .note{
+  margin-top:14px;padding:14px 18px;border-radius:14px;
+  background:linear-gradient(180deg,rgba(246,230,184,.5),rgba(246,230,184,.28));
+  border:1px solid rgba(212,165,57,.38);
+  font-size:15px;color:var(--gold-700);
+}
+
+/* ================= CTA ================= */
+.cta{
+  position:relative;overflow:hidden;
+  margin:0 26px 90px;border-radius:34px;
+  max-width:1240px;
+  background:
+    radial-gradient(ellipse at 15% 12%,rgba(124,192,230,.4),transparent 55%),
+    radial-gradient(ellipse at 88% 90%,rgba(232,196,106,.32),transparent 55%),
+    linear-gradient(150deg,var(--sky-800),var(--sky-900) 60%,#04202f);
+  box-shadow:0 24px 60px rgba(6,42,66,.32),inset 0 1px 2px rgba(255,255,255,.14);
+}
+.cta-inner{
+  position:relative;z-index:2;
+  max-width:1188px;margin:0 auto;padding:72px 40px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:38px;flex-wrap:wrap;
+}
+.cta h3{
+  font-family:'Reem Kufi';font-size:clamp(1.75rem,4.2vw,2.95rem);
+  color:#fff;font-weight:700;line-height:1.5;max-width:17ch;
+}
+.cta h3 em{
+  font-style:normal;
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.cta p{
+  color:rgba(238,247,252,.72);margin-top:14px;font-weight:300;
+  max-width:44ch;font-size:16px;line-height:2.1;
+}
+.cta-btn{
+  font-family:'Reem Kufi';font-size:18px;font-weight:700;
+  padding:20px 50px;border-radius:100px;text-decoration:none;
+  color:var(--sky-900);white-space:nowrap;
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500) 55%,var(--gold-600));
+  box-shadow:0 10px 24px rgba(180,134,31,.45),
+             inset 0 2px 3px rgba(255,255,255,.6),
+             inset 0 -4px 7px rgba(138,100,18,.4);
+  transition:.45s cubic-bezier(.2,.8,.2,1);
+  border:2px solid rgba(255,255,255,.18);
+}
+.cta-btn:hover{transform:translateY(-4px) scale(1.02);
+  box-shadow:0 18px 40px rgba(180,134,31,.55),
+             inset 0 2px 3px rgba(255,255,255,.65),
+             inset 0 -4px 7px rgba(138,100,18,.4);}
+.cta-ring{
+  position:absolute;left:-110px;bottom:-130px;
+  width:380px;height:380px;border-radius:50%;
+  border:70px solid rgba(232,196,106,.16);
+}
+.cta-ring2{
+  position:absolute;right:-60px;top:-90px;
+  width:260px;height:260px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.16);
+}
+
+/* ================= FOOTER ================= */
+footer{
+  max-width:1240px;margin:0 auto;padding:0 26px 52px;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:18px;flex-wrap:wrap;
+  font-size:13.5px;color:var(--ink-soft);
+}
+footer a{color:var(--gold-700);text-decoration:none;font-weight:600;transition:.3s}
+footer a:hover{color:var(--sky-700)}
+.f-links{display:flex;gap:22px;flex-wrap:wrap}
+
+/* ================= TOAST ================= */
+.toast{
+  position:fixed;bottom:30px;left:50%;
+  transform:translate(-50%,150%);
+  padding:15px 30px;border-radius:100px;
+  color:var(--sky-900);font-size:14.5px;font-weight:600;
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500));
+  box-shadow:0 16px 40px rgba(180,134,31,.42),inset 0 2px 2px rgba(255,255,255,.55);
+  transition:transform .55s cubic-bezier(.2,.8,.2,1);
+  z-index:1000;
+}
+.toast.show{transform:translate(-50%,0)}
+
+/* ================= TOC pill bar ================= */
+.toc{
+  position:sticky;top:78px;z-index:150;
+  margin:0 0 8px;
+  padding:12px;border-radius:100px;
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(124,192,230,.4);
+  box-shadow:var(--shadow-soft);
+  display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+}
+.toc a{
+  text-decoration:none;font-size:13.5px;font-weight:600;
+  padding:9px 20px;border-radius:100px;color:var(--sky-800);
+  background:linear-gradient(180deg,#eef7fc,#dcecf7);
+  box-shadow:0 2px 6px rgba(10,61,94,.1),inset 0 1px 2px #fff;
+  transition:.35s cubic-bezier(.2,.8,.2,1);
+}
+.toc a:hover{
+  transform:translateY(-2px);color:var(--sky-900);
+  background:linear-gradient(180deg,var(--gold-400),var(--gold-500));
+  box-shadow:0 6px 14px rgba(180,134,31,.32),inset 0 2px 2px rgba(255,255,255,.55);
+}
+
+/* ================= REVEAL ================= */
+.reveal{opacity:0;transform:translateY(28px);
+  transition:opacity .85s ease,transform .85s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:860px){
+  .nav-links{display:none}
+  .toc{top:72px;padding:10px}
+  .toc a{padding:8px 15px;font-size:12.5px}
+}
+@media(max-width:680px){
+  .hero{padding:52px 18px 38px}
+  .hero-verse{padding:18px 20px}
+  .wrap{padding:10px 16px 70px}
+  .cta{margin:0 16px 66px;border-radius:26px}
+  .cta-inner{padding:52px 22px}
+  .faq-q{padding:18px 15px;gap:12px}
+  .q-num{display:none}
+  .faq-a-content{padding:2px 18px 24px 18px;font-size:15px}
+  .section-head{margin:52px 0 24px;gap:12px}
+  .section-num{width:48px;height:48px;font-size:18px;border-radius:14px}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+          <path d="M12 21c-4.5-3-8-6-8-10a5 5 0 0 1 8-3 5 5 0 0 1 8 3c0 4-3.5 7-8 10z"/>
+          <path d="M12 8v13"/>
+        </svg>
+      </div>
+      <div class="brand-name">صيد الغزلان<span>للتقوية الذاكرة وحفظ القرآن</span></div>
+    </div>
+    <nav class="nav-links">
+      <a href="#sec1">التعريف بالدورة</a>
+      <a href="#sec2">الاستفادة والتدريب</a>
+      <a href="#sec3">أسئلة إضافية</a>
+    </nav>
+    <a href="#cta" class="nav-cta">اشترك الآن</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-glow"></div>
+
+  <div class="badge reveal"><i></i> الأسئلة والأجوبة الرسمية — الدفعة 87</div>
+
+  <h1 class="reveal">دورة <span class="gold">صيد الغزلان</span><br>لتقوية الذاكرة وحفظ القرآن</h1>
+
+  <p class="hero-sub reveal">
+    برنامج تدريبي عملي متدرّج لتنمية الذاكرة والمهارات الذهنية، وتيسير حفظ القرآن الكريم وفهمه،
+    وتحسين القدرة على الحفظ والتذكر والتركيز والتفكير — يجمع بين التدريب العملي والمعاني الإيمانية والعلوم القرآنية النافعة.
+  </p>
+
+  <div class="hero-verse reveal">
+    «كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ»
+    <small>سورة ص — الآية 29</small>
+  </div>
+
+  <div class="hero-cards">
+    <div class="hcard reveal">
+      <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 11h18"/></svg></div>
+      <h3>الدفعة 87</h3>
+      <p>تبدأ يوم الأحد 25 أكتوبر 2026 بإذن الله</p>
+    </div>
+    <div class="hcard reveal">
+      <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <h3>12 لقاءً</h3>
+      <p>خلال ثلاثة أسابيع — نحو ساعة ونصف لكل لقاء</p>
+    </div>
+    <div class="hcard reveal">
+      <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/><path d="M12 3a9 9 0 0 0 0 18"/><path d="M3 12h18"/></svg></div>
+      <h3>مباشرة وتفاعلية</h3>
+      <p>عبر تيليجرام مع تسجيلات للرجوع إليها</p>
+    </div>
+    <div class="hcard reveal">
+      <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14"/><path d="M4 19a2 2 0 0 0 2 2h14"/><path d="M8 7h8M8 11h8"/></svg></div>
+      <h3>شهادة حضور</h3>
+      <p>وفق نظام الدورة ومتطلبات الحضور المعتمدة</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOC ================= -->
+<div class="wrap" style="padding-bottom:0">
+  <div class="toc reveal">
+    <a href="#sec1">أولًا: التعريف بالدورة ومواعيدها</a>
+    <a href="#sec2">ثانيًا: الاستفادة والتدريب</a>
+    <a href="#sec3">ثالثًا: أسئلة إضافية مهمة</a>
+  </div>
+</div>
+
+<!-- ================= MAIN ================= -->
+<main class="wrap">
+
+  <!-- ================= SECTION 1 ================= -->
+  <div class="section-head reveal" id="sec1">
+    <div class="section-num">1</div>
+    <h2>التعريف بالدورة ومواعيدها<small>الأسئلة من 1 إلى 14</small></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="faq-list">
+
+    <!-- Q1 -->
+    <div class="faq-item open" id="q1">
+      <button class="faq-q" aria-expanded="true">
+        <span class="q-num">01</span>
+        <span class="q-title">ما هي دورة صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q1" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        دورة صيد الغزلان برنامج تدريبي عملي لتنمية الذاكرة والمهارات الذهنية، وتيسير حفظ القرآن الكريم وفهمه،
+        وتحسين القدرة على الحفظ والتذكر والتركيز والتفكير. تجمع الدورة بين التدريب العملي والمعاني الإيمانية والعلوم القرآنية النافعة.
+      </div></div></div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="faq-item" id="q2">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">02</span>
+        <span class="q-title">متى تبدأ الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q2" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تبدأ <strong>الدفعة 87</strong> يوم الأحد الموافق <strong>25 أكتوبر 2026</strong> بإذن الله تعالى.
+      </div></div></div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="faq-item" id="q3">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">03</span>
+        <span class="q-title">ما مواعيد الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q3" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تُعقد الدورة في مجموعتين:
+        <ul>
+          <li><strong>المجموعة الصباحية:</strong> الساعة 6:15 صباحًا بتوقيت مصر.</li>
+          <li><strong>المجموعة المسائية:</strong> الساعة 9:00 مساءً بتوقيت مصر.</li>
+        </ul>
+      </div></div></div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="faq-item" id="q4">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">04</span>
+        <span class="q-title">كم رسوم الاشتراك في الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q4" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        رسوم الاشتراك حسب البلد:
+        <ul>
+          <li><strong>مصر:</strong> 500 جنيه مصري.</li>
+          <li><strong>السعودية:</strong> 70 ريالًا سعوديًا.</li>
+          <li><strong>الأردن:</strong> 20 دينارًا أردنيًا.</li>
+        </ul>
+      </div></div></div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="faq-item" id="q5">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">05</span>
+        <span class="q-title">كيف يمكنني دفع رسوم الاشتراك؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q5" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تواصل معنا عبر الرسائل، وسنوضح لك طريقة الدفع المناسبة لك بحسب بلدك.
+      </div></div></div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="faq-item" id="q6">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">06</span>
+        <span class="q-title">هل يمكنني تأجيل دفع رسوم الاشتراك إلى الغد؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q6" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        يرجى التواصل معنا لتوضيح موعد الدفع وإمكانية حجز مكانك. ويُفضّل إتمام إجراءات الاشتراك مبكرًا حتى تتمكن من الاستفادة من الدورة منذ بدايتها.
+      </div></div></div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="faq-item" id="q7">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">07</span>
+        <span class="q-title">ماذا أفعل إذا فاتني عرض الهدايا؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q7" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تواصل معنا للاستفسار عن العروض المتاحة وقت اشتراكك؛ فالهدايا الخاصة مرتبطة بالعرض المعلن وشروطه،
+        ولا نضمن استمرارها بعد انتهاء المدة أو اكتمال العدد المحدد.
+      </div></div></div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="faq-item" id="q8">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">08</span>
+        <span class="q-title">هل الدورة مباشرة أم مسجلة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q8" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        الدورة مباشرة وتفاعلية عبر <strong>تيليجرام</strong>، وتُتاح تسجيلات اللقاءات في مجموعة الدورة ليستطيع المتدرب الرجوع إليها.
+        ومع ذلك، فالحضور المباشر والتفاعل وأداء التدريبات أفضل من الاكتفاء بالمشاهدة المسجلة.
+      </div></div></div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="faq-item" id="q9">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">09</span>
+        <span class="q-title">كم عدد لقاءات الدورة ومدتها؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q9" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تتكون الدورة من <strong>12 لقاءً تدريبيًا</strong> خلال ثلاثة أسابيع، ويستغرق اللقاء نحو <strong>ساعة ونصف</strong> تقريبًا.
+      </div></div></div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="faq-item" id="q10">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">10</span>
+        <span class="q-title">ماذا سأتعلم في دورة صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q10" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        ستتدرب على وسائل عملية لتنمية الذاكرة والتركيز والفهم وسرعة الحفظ والتذكر، مع تطبيقات على حفظ القرآن الكريم وفهمه،
+        وربط الآيات والمعاني، وتحسين المراجعة والتثبيت. كما تتعرف على معارف قرآنية وإيمانية نافعة.
+      </div></div></div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="faq-item" id="q11">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">11</span>
+        <span class="q-title">ما الذي يميز دورة صيد الغزلان عن غيرها؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q11" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تتميز بالجمع بين المعلومات النظرية والتطبيق العملي، والتدرج في التدريب، وتصحيح الواجبات ومتابعة المتدربين،
+        وربط تنمية الذاكرة بفهم القرآن وحفظه والانتفاع به. كما أن المنهج يراعي الضوابط الشرعية،
+        ويُميّز بين المعلومات النافعة والأفكار التي تحتاج إلى نقد أو تحقق.
+      </div></div></div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="faq-item" id="q12">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">12</span>
+        <span class="q-title">هل أستطيع حفظ صفحة من القرآن في خمس دقائق؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q12" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        من أهداف المنهج تدريب المتعلم على زيادة سرعة الحفظ، وقد يصل بعض المتدربين إلى حفظ صفحة في نحو خمس دقائق
+        بحسب مستوى الصفحة وقدرات المتدرب ومدى فهمه وتطبيقه للتدريبات.
+        <div class="note">هذه مدة مستهدفة للتدريب وليست نتيجة مضمونة لكل شخص أو لكل صفحة.</div>
+      </div></div></div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="faq-item" id="q13">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">13</span>
+        <span class="q-title">هل تساعد الدورة على تثبيت المحفوظ القديم؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q13" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، تتضمن الدورة أساليب للمراجعة والاسترجاع والتثبيت، وتساعد المتدرب على تنظيم مراجعة محفوظاته وتقليل النسيان قدر الإمكان.
+        ويعتمد ثبات المحفوظ على <strong>المراجعة المنتظمة والتطبيق المستمر</strong>.
+      </div></div></div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="faq-item" id="q14">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">14</span>
+        <span class="q-title">هل تتضمن الدورة فهم القرآن أم تقتصر على الحفظ؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q14" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تجمع الدورة بين تنمية الذاكرة وفهم القرآن وحفظه، من خلال الاستعانة بالمعاني والروابط بين الآيات،
+        والتقسيمات الموضوعية، والأسئلة التي تنشّط الانتباه وتعين على الفهم والتدبر.
+      </div></div></div>
+    </div>
+
+  </div>
+
+  <!-- ================= SECTION 2 ================= -->
+  <div class="section-head reveal" id="sec2">
+    <div class="section-num">2</div>
+    <h2>الاستفادة والتدريب<small>الأسئلة من 15 إلى 30</small></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="faq-list">
+
+    <!-- Q15 -->
+    <div class="faq-item" id="q15">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">15</span>
+        <span class="q-title">ما الهدايا والمزايا التي يحصل عليها المشترك؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q15" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        من مزايا البرنامج:
+        <ul>
+          <li>تسجيلات اللقاءات للرجوع إليها.</li>
+          <li>تدريبات إضافية عبر تيليجرام.</li>
+          <li>الاستفادة من الكتب والمواد الإسلامية المتعلقة بالذاكرة والحفظ.</li>
+          <li>كتاب <strong>«وعاد القلب إلى القرآن»</strong>.</li>
+          <li>شهادة حضور الدورة.</li>
+          <li>متابعة الواجبات وتصحيحها.</li>
+          <li>التواصل المباشر مع المدرب في حدود نظام الدورة.</li>
+          <li>مجموعة مجانية للتسميع.</li>
+          <li>الاستفادة من قناة <strong>«قرآن كالفاتحة»</strong> للتعرف على نصائح في الحفظ وتنمية الذاكرة.</li>
+        </ul>
+        <div class="note">تُوضَّح تفاصيل الهدايا والعروض المتاحة عند الاشتراك.</div>
+      </div></div></div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="faq-item" id="q16">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">16</span>
+        <span class="q-title">هل الدورة مناسبة لمن يعاني ضعف الذاكرة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q16" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، الدورة مناسبة لمن يريد تنمية ذاكرته وتحسين قدرته على الحفظ والتذكر، وتبدأ بالتدرج في المهارات الأساسية.
+        ويختلف مقدار التحسن من شخص إلى آخر بحسب قدراته والتزامه بالتدريب.
+      </div></div></div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="faq-item" id="q17">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">17</span>
+        <span class="q-title">ليس لدي وقت كافٍ، فهل تناسبني الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q17" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تحتاج الدورة إلى وقت لحضور اللقاءات وتنفيذ التدريبات والواجبات. إذا استطعت تخصيص وقت منتظم لذلك فستتمكن من متابعة البرنامج بصورة أفضل.
+        أما إذا كنت غير قادر على الالتزام في الوقت الحالي، فيمكنك التواصل معنا لمعرفة المواد المسجلة المتاحة.
+      </div></div></div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="faq-item" id="q18">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">18</span>
+        <span class="q-title">هل تناسب الدورة المبتدئين الذين لم يدرسوا الذاكرة من قبل؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q18" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، تبدأ الدورة من الأساسيات وتتدرج في التدريب، ولا يُشترط أن تكون لديك خبرة سابقة في تقنيات الذاكرة.
+      </div></div></div>
+    </div>
+
+    <!-- Q19 -->
+    <div class="faq-item" id="q19">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">19</span>
+        <span class="q-title">أعاني من التشتت وضعف التركيز، فهل يمكنني الاستفادة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q19" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        تتضمن الدورة تدريبات لتنمية الانتباه والتركيز، وتساعدك على التعرف على أساليب عملية لتحسينهما.
+        ويعتمد مقدار التحسن على أسباب التشتت، ومدى الالتزام بالتدريبات، والظروف الفردية لكل متدرب.
+      </div></div></div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="faq-item" id="q20">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">20</span>
+        <span class="q-title">ماذا أفعل إذا لم أستطع تطبيق التدريبات من أول مرة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q20" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        لا تقلق من عدم إتقان التدريب من المحاولة الأولى؛ فالتعلّم يحتاج إلى التدرج والممارسة.
+        أعد التدريب وفق التعليمات، واستفد من التصحيح والتوجيه، واسأل المدرب عما يصعب عليك.
+        <strong>المهم أن تواصل المحاولة وتطبّق الخطوات بصورة صحيحة.</strong>
+      </div></div></div>
+    </div>
+
+    <!-- Q21 -->
+    <div class="faq-item" id="q21">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">21</span>
+        <span class="q-title">هل الدورة مناسبة لكبار السن والطلاب ومعلمي القرآن؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q21" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، يمكن أن يستفيد منها الطلاب ومعلمو القرآن وكبار السن وغيرهم ممن يرغبون في تنمية الذاكرة والحفظ والتذكر.
+        ويُراعى اختلاف الأعمار والقدرات عند متابعة التدريب، مع ضرورة قدرة المتدرب على متابعة اللقاءات وتنفيذ الأنشطة المناسبة له.
+      </div></div></div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="faq-item" id="q22">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">22</span>
+        <span class="q-title">كيف أتأكد من مصداقية الدورة قبل الاشتراك؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q22" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        يمكنك الاطلاع على تجارب وآراء بعض المتدربين في قناة الشهادات والتجارب:
+        <br>
+        <a href="https://t.me/TheMemoryofAlBukhari" target="_blank" rel="noopener">t.me/TheMemoryofAlBukhari</a>
+        <br>
+        كما يمكنك إرسال أسئلتك إلينا قبل الاشتراك لمعرفة تفاصيل المنهج وطريقة التدريب ومواعيده.
+      </div></div></div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="faq-item" id="q23">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">23</span>
+        <span class="q-title">هل نتائج الدورة مضمونة لكل المشتركين؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q23" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نحرص على تقديم تدريب عملي ومتابعة تساعد المتدرب على تحقيق أفضل استفادة ممكنة، لكننا لا نعد بنتيجة واحدة مضمونة للجميع؛
+        لأن النتائج تختلف بحسب قدرات المتدرب، والتزامه بالحضور، وأدائه للتدريبات والواجبات، واستمراره في التطبيق.
+      </div></div></div>
+    </div>
+
+    <!-- Q24 -->
+    <div class="faq-item" id="q24">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">24</span>
+        <span class="q-title">هل يمكنني مشاهدة عينة من الدورة قبل الاشتراك؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q24" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        يمكنك الاطلاع على المعلومات المتاحة عن الدورة، وقراءة تجارب المتدربين، وسؤالنا عن المنهج والتدريبات والمواعيد قبل اتخاذ قرار الاشتراك.
+        أما حضور لقاء مجاني منفصل فلا يُتاح بالضرورة؛ لأن البرنامج تدريجي، وقد لا تمثل محاضرة واحدة طبيعة الدورة ومستواها الحقيقي.
+      </div></div></div>
+    </div>
+
+    <!-- Q25 -->
+    <div class="faq-item" id="q25">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">25</span>
+        <span class="q-title">هل أحصل على شهادة بعد انتهاء الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q25" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، من مزايا الدورة إتاحة <strong>شهادة حضور</strong> وفق نظام الدورة ومتطلبات الحضور المعتمدة فيها.
+      </div></div></div>
+    </div>
+
+    <!-- Q26 -->
+    <div class="faq-item" id="q26">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">26</span>
+        <span class="q-title">هل أحتاج إلى جهاز كمبيوتر لحضور الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q26" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        لا يشترط وجود جهاز كمبيوتر؛ يمكنك متابعة الدورة عبر الهاتف باستخدام تطبيق تيليجرام،
+        بشرط توافر اتصال مناسب بالإنترنت والقدرة على متابعة اللقاءات والتفاعل معها.
+      </div></div></div>
+    </div>
+
+    <!-- Q27 -->
+    <div class="faq-item" id="q27">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">27</span>
+        <span class="q-title">هل تُصحَّح الواجبات والتدريبات؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q27" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، تتضمن الدورة متابعة الواجبات وتصحيحها وتوجيه المتدرب إلى ما يحتاج إلى تحسين،
+        بما يساعده على فهم التدريبات وتطبيقها بصورة أفضل.
+      </div></div></div>
+    </div>
+
+    <!-- Q28 -->
+    <div class="faq-item" id="q28">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">28</span>
+        <span class="q-title">هل يمكنني التواصل مع المدرب مباشرة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q28" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، تتيح الدورة التواصل مع المدرب لطرح الأسئلة المتعلقة بالتدريب والاستفسار عما يصعب عليك،
+        وفق آلية التواصل المتبعة في البرنامج.
+      </div></div></div>
+    </div>
+
+    <!-- Q29 -->
+    <div class="faq-item" id="q29">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">29</span>
+        <span class="q-title">هل توجد مجموعة مجانية للتسميع؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q29" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نعم، توجد <strong>مجموعة مجانية للتسميع</strong> تساعد المشاركين على ممارسة التسميع والاستمرار في حفظ القرآن ومراجعته.
+      </div></div></div>
+    </div>
+
+    <!-- Q30 -->
+    <div class="faq-item" id="q30">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">30</span>
+        <span class="q-title">كيف أسجل في الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q30" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        أرسل إلينا كلمة <strong>«اشتراك»</strong> عبر الرسائل، وسنوضح لك خطوات التسجيل، وطريقة الدفع المناسبة، وكيفية الانضمام إلى مجموعة الدورة.
+      </div></div></div>
+    </div>
+
+  </div>
+
+  <!-- ================= SECTION 3 ================= -->
+  <div class="section-head reveal" id="sec3">
+    <div class="section-num">3</div>
+    <h2>أسئلة إضافية مهمة<small>الأسئلة من 31 إلى 39</small></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="faq-list">
+
+    <!-- Q31 -->
+    <div class="faq-item" id="q31">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">31</span>
+        <span class="q-title">هل يمكنني حضور محاضرة مجانية قبل الاشتراك للتعرف على أسلوب الدورة؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q31" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        دورة صيد الغزلان برنامج تدريبي متدرج، وليست مجموعة محاضرات نظرية منفصلة؛ فكل مرحلة تبني على ما سبقها،
+        والتدريبات تتطور تدريجيًا بحسب ما يتعلمه المتدرب. لذلك قد لا تعطي محاضرة واحدة صورة عادلة عن طبيعة البرنامج ومستواه.
+        <div class="note">يسعدنا الإجابة عن أسئلتك حول المنهج والتدريبات والمواعيد والمزايا حتى تتخذ قرار الاشتراك عن معرفة واطمئنان.</div>
+      </div></div></div>
+    </div>
+
+    <!-- Q32 -->
+    <div class="faq-item" id="q32">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">32</span>
+        <span class="q-title">هل دورة صيد الغزلان مناسبة لي؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q32" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        الدورة موجهة إلى من يرغبون في تنمية الذاكرة وتحسين الحفظ والتذكر وتيسير تعلم القرآن،
+        وتناسب أعمارًا مختلفة، من نحو <strong>9 إلى 75 عامًا</strong>، مع مراعاة قدرات المتدرب ومدى ملاءمة التدريب له.
+        <br>
+        ولا يشترط أن تكون ذاكرتك ضعيفة؛ فحتى من يتمتع بذاكرة جيدة يستطيع السعي إلى تطوير مهاراته.
+        وتبدأ التدريبات من الأساسيات وتتدرج بحسب المنهج، مع اختلاف مقدار الاستفادة من شخص إلى آخر.
+      </div></div></div>
+    </div>
+
+    <!-- Q33 -->
+    <div class="faq-item" id="q33">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">33</span>
+        <span class="q-title">دخلت دورة أخرى من قبل ولم أستفد، فما الذي يضمن لي أن أستفيد من دورة صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q33" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نتفهم قلقك، فعدم الاستفادة من تجربة سابقة قد تكون له أسباب متعددة؛ منها طبيعة المحتوى، أو طريقة التدريب،
+        أو عدم مناسبة البرنامج للمتدرب، أو ضعف المتابعة والتطبيق.
+        <br>
+        في دورة صيد الغزلان نحرص على التدرج في التدريب، وتصحيح الواجبات، ومتابعة التقدم، وإتاحة التسجيلات والتواصل مع المدرب.
+        ومع ذلك، لا يمكننا أن نضمن النتيجة نفسها لكل شخص؛ فاستفادتك ترتبط أيضًا بحضورك وتفاعلك وتنفيذك للتدريبات واستمرارك في تطبيق ما تتعلمه.
+        <div class="note">ونرجو أن يجعل الله في هذا العمل نفعًا لك، وأن يرزقنا وإياك العلم النافع والعمل الصالح.</div>
+      </div></div></div>
+    </div>
+
+    <!-- Q34 -->
+    <div class="faq-item" id="q34">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">34</span>
+        <span class="q-title">هل يمكنني تقسيط رسوم دورة صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q34" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        لا يتوافر حاليًا نظام تقسيط الرسوم على عدة أشهر؛ لأن الدورة برنامج تدريبي مكثف يمتد ثلاثة أسابيع،
+        والرسوم محددة مقابل التدريب والمتابعة والمواد والمزايا المقررة.
+        <div class="note">وإذا كانت الرسوم لا تناسب ميزانيتك في الوقت الحالي، فيمكنك التواصل معنا للاستفسار عن الكتب أو المواد الأخرى المتاحة التي قد تناسب احتياجك وإمكاناتك.</div>
+      </div></div></div>
+    </div>
+
+    <!-- Q35 -->
+    <div class="faq-item" id="q35">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">35</span>
+        <span class="q-title">ما طريقة التدريب في دورة صيد الغزلان؟ وما الذي يميز منهجكم؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q35" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        يقوم المنهج على <strong>أربعة محاور رئيسية</strong>:
+        <ul>
+          <li><strong>المعلومات المتعلقة بالذاكرة:</strong> عرضها ونقدها وتمييز النافع منها، مع مراعاة الضوابط الشرعية والرجوع إلى القرآن والسنة فيما يتعلق بالقضايا الشرعية.</li>
+          <li><strong>التدريب العملي على الحفظ:</strong> تطبيق أساليب الحفظ والتذكر على القرآن والمعلومات والبيانات والأسماء وغيرها.</li>
+          <li><strong>تنمية المهارات الذهنية:</strong> تدريبات تساعد على تطوير الانتباه والتركيز والتفكير والتحليل.</li>
+          <li><strong>ربط التدريب بالمعرفة الإسلامية:</strong> الاستفادة من التدريبات في فهم القرآن وتدبره والتعرف على محاسن الدين وهدايات القرآن.</li>
+        </ul>
+        ويستند التوجه العقدي إلى منهج أهل السنة والجماعة، مع العناية بفهم القرآن والسنة على هدي النبي ﷺ وأصحابه والعلماء المعتبرين.
+        <div class="note">وخلاصة المنهج: تنمية الذاكرة والتذكر والتفكير، وتيسير فهم القرآن وحفظه، مع اكتساب معارف إسلامية نافعة.</div>
+      </div></div></div>
+    </div>
+
+    <!-- Q36 -->
+    <div class="faq-item" id="q36">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">36</span>
+        <span class="q-title">من هو مدرب دورة صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q36" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        المدرب هو <strong>الشيخ عبدالمجيد سلامة</strong>، داعية وباحث ومدرب في مجال الذاكرة والمهارات الذهنية،
+        وله اهتمام بالابتكار وتطوير أساليب الحفظ والتعلم.
+        <br>
+        وله ابتكارات مسجلة لدى أكاديمية البحث العلمي منذ مرحلة دراسته، نحو عام 1995،
+        كما حصل على شهادات من مراكز وجهات متعددة في مجالات المهارات الذهنية والتعلم وصعوبات التعلم والذاكرة والدماغ.
+        <br>
+        ومن أعماله كتاب <strong>«صيد الغزلان»</strong>، وهو كتاب تطبيقي يعين على فهم القرآن وحفظه،
+        ويجمع بين التفسير الموجز والروابط بين الآيات والمناسبات والتقسيمات الموضوعية والأسئلة التي تنشّط الانتباه.
+        ويُتاح جزء من مادة الكتاب بصيغة إلكترونية للمتدربين تدريجيًا، كما يمكن طلب النسخة المطبوعة الكاملة.
+      </div></div></div>
+    </div>
+
+    <!-- Q37 -->
+    <div class="faq-item" id="q37">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">37</span>
+        <span class="q-title">كيف أحصل على كتاب صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q37" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        يمكنك طلب النسخة المطبوعة من كتاب صيد الغزلان بالتواصل معنا وإرسال البيانات التالية:
+        <ul>
+          <li>الاسم الكامل.</li>
+          <li>العنوان بالتفصيل.</li>
+          <li>رقم هاتف أساسي.</li>
+          <li>رقم هاتف بديل للتواصل عند تعذر الوصول إلى الرقم الأساسي.</li>
+        </ul>
+        ويُفضّل أن يكون أحد الرقمين متاحًا عبر واتساب لتسهيل التواصل وترتيب الشحن.
+      </div></div></div>
+    </div>
+
+    <!-- Q38 -->
+    <div class="faq-item" id="q38">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">38</span>
+        <span class="q-title">كم سعر كتاب صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q38" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        سعر كتاب صيد الغزلان <strong>385 جنيهًا مصريًا</strong> شاملًا ثمن الكتاب ومصاريف الشحن داخل مصر.
+      </div></div></div>
+    </div>
+
+    <!-- Q39 -->
+    <div class="faq-item" id="q39">
+      <button class="faq-q" aria-expanded="false">
+        <span class="q-num">39</span>
+        <span class="q-title">هل تضمنون استفادتي من دورة صيد الغزلان؟</span>
+        <span class="q-actions">
+          <span class="link-btn" data-link="q39" title="نسخ رابط السؤال">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          </span>
+          <span class="toggle"><span></span><span></span></span>
+        </span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner"><div class="faq-a-content">
+        نحرص على مساعدتك على تحقيق أكبر استفادة ممكنة من الدورة، من خلال التدريب العملي، وتصحيح الواجبات، ومتابعة التقدم، وإتاحة التواصل مع المدرب.
+        <br>
+        وتعتمد الاستفادة على التزام المتدرب بالحضور والتفاعل، وأداء التدريبات، وتطبيق ما يتعلمه.
+        ونوضح لك أن الدورة تهدف إلى تنمية مهارات الذاكرة والحفظ والفهم، ولا نعد بنتيجة واحدة مضمونة لجميع المتدربين؛
+        لاختلاف قدراتهم وظروفهم ومقدار تطبيقهم للتدريبات.
+        <div class="note">نسأل الله أن ينفع بهذه الدورة، وأن يجعلها عونًا على فهم كتابه وحفظه والعمل به.</div>
+      </div></div></div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ================= CTA ================= -->
+<section class="cta" id="cta">
+  <div class="cta-ring"></div>
+  <div class="cta-ring2"></div>
+  <div class="cta-inner">
+    <div>
+      <h3>انضم إلى <em>الدفعة 87</em> وابدأ رحلتك مع القرآن</h3>
+      <p>أرسل كلمة «اشتراك» الآن — وسنوضح لك خطوات التسجيل وطريقة الدفع المناسبة لبلدك.</p>
+    </div>
+    <a href="#" class="cta-btn">اشترك في الدورة</a>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 دورة صيد الغزلان — مشروع لتقوية الذاكرة وحفظ القرآن الكريم</div>
+  <div class="f-links">
+    <a href="#sec1">التعريف بالدورة</a>
+    <a href="#sec2">الاستفادة والتدريب</a>
+    <a href="#sec3">أسئلة إضافية</a>
+    <a href="https://t.me/TheMemoryofAlBukhari" target="_blank" rel="noopener">قناة الشهادات والتجارب</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast">تم نسخ رابط السؤال</div>
+
+<script>
+// ===== Accordion =====
+const items = document.querySelectorAll('.faq-item');
+items.forEach(item=>{
+  const btn = item.querySelector('.faq-q');
+  btn.addEventListener('click',()=>{
+    const isOpen = item.classList.contains('open');
+    items.forEach(i=>{
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if(!isOpen){
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+// ===== Copy link + toast =====
+const toast = document.getElementById('toast');
+let toastTimer;
+function showToast(msg){
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>toast.classList.remove('show'),2300);
+}
+document.querySelectorAll('.link-btn').forEach(btn=>{
+  btn.addEventListener('click',e=>{
+    e.stopPropagation();
+    const id = btn.dataset.link;
+    const url = location.origin + location.pathname + '#' + id;
+    history.replaceState(null,'','#'+id);
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url)
+        .then(()=>showToast('تم نسخ رابط السؤال'))
+        .catch(()=>showToast('الرابط: '+url));
+    } else {
+      const t=document.createElement('textarea');
+      t.value=url;document.body.appendChild(t);t.select();
+      try{document.execCommand('copy');showToast('تم نسخ رابط السؤال');}
+      catch(err){showToast('الرابط: '+url);}
+      document.body.removeChild(t);
+    }
+  });
+});
+
+// ===== Deep link open =====
+function openFromHash(){
+  const id = location.hash.slice(1);
+  if(!id) return;
+  const el = document.getElementById(id);
+  if(el && el.classList.contains('faq-item')){
+    items.forEach(i=>{
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    el.classList.add('open');
+    el.querySelector('.faq-q').setAttribute('aria-expanded','true');
+    setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'center'}),140);
+  }
+}
+window.addEventListener('hashchange',openFromHash);
+openFromHash();
+
+// ===== Reveal on scroll =====
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); }
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  el.style.transitionDelay = ((i%5)*0.09)+'s';
+  obs.observe(el);
+});
+</script>
+
+</body>
+</html>
